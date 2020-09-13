@@ -9,4 +9,9 @@ public class UrlShortenerController {
     public String index() {
         return "Hello world";
     }
+
+    @RequestMapping("/bec")
+    public String bec() {
+        return "I ❤️ Bec";
+    }
 }
