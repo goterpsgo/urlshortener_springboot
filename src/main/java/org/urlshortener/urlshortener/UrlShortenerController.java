@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 
-@RestController
+@Controller
 public class UrlShortenerController {
     @RequestMapping("/")
     public String hello_world() {
