@@ -22,6 +22,6 @@ public class UrlShortenerController {
 
     @RequestMapping("/bec")
     public String bec() {
-        return "I ❤️ Bec";
+        return "bec";
     }
 }
