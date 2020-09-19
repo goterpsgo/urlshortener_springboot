@@ -1,11 +1,38 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset = "ISO-8859-1" />
-        <link href = "css/styles.css" rel = "stylesheet"/>
-        <title>Spring Boot Application</title>
-    </head>
-    <body>
-        <h4>Welcome to Thymeleaf Spring Boot web application</h4>
-    </body>
+<head>
+    <title>URL Shortener</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style type="text/css">
+        .container {
+            max-width: 1024px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        .title {
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="title">
+        URL shortener
+    </div>
+    <div class="user_login_form">
+        <form name="user_login" id="user_login0" method="POST" action="/">
+            <p><label for="username">Username</label> <input type="input" name="username" id="username0"></p>
+            <p><label for="password">Password</label> <input type="password" name="password" id="password0"></p>
+            <p><input type="submit" name="submit" id="submit_user_login0"> <input type="reset" name="reset"></p>
+        </form>
+    </div>
+    <hr />
+    <div class="user_login_form">
+        <form name="url_form" id="url_form0" method="POST" action="/">
+            <p><label for="url">URL to shorten</label> <input type="input" name="url" id="url0"></p>
+            <p><input type="submit" name="submit" id="submit_user_login0"> <input type="reset" name="reset"></p>
+        </form>
+    </div>
+</div>
+</body>
 </html>

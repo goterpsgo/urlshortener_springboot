@@ -9,12 +9,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 
 @Controller
 public class UrlShortenerController {
-    @RequestMapping("/")
-    public String hello_world() {
-        return "Hello world";
-    }
-
-    @GetMapping(value = "/index")
+    @GetMapping( {"/", "/index"} )
     public String index() {
         return "index";
     }
